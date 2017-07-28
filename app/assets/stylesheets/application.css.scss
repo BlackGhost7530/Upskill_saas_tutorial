@@ -41,7 +41,18 @@ body {
   border: none;
 }
 
-a.navbar-brand {
-  margin: 0px;
-  color: red;
+.navbar-default .navbar-brand {
+  color: rgb(217, 217, 217);
+}
+
+.navbar-default .navbar-brand:hover {
+  color: rgb(89, 89, 89);
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: rgb(217, 217, 217);
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: rgb(89, 89, 89);
 }
