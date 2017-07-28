@@ -16,19 +16,24 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
+//Full Page
 html {
   height: 100%;
 }
 
+//Typographie Styles
 h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
 }
-
 h1 {
   font-size: 300%;
 }
 
+
+//Background Color
 body {
   //Gradient provided by @_ighosh at uigradients.com
   background: #ADA996;  /* fallback for old browsers */
@@ -36,23 +41,17 @@ body {
   background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+//Nav Styles
 .navbar {
   background: #2d2a2a;
   border: none;
 }
 
-.navbar-default .navbar-brand {
-  color: rgb(217, 217, 217);
-}
-
-.navbar-default .navbar-brand:hover {
-  color: rgb(89, 89, 89);
-}
-
+.navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
   color: rgb(217, 217, 217);
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: rgb(89, 89, 89);
+  &:hover {
+    color: rgb(89, 89, 89)
+  }
 }
