@@ -20,11 +20,14 @@
 @import 'font-awesome';
 
 //Full Page
+
 html {
   height: 100%;
 }
 
+
 //Typographie Styles
+
 h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
 }
@@ -34,6 +37,7 @@ h1 {
 
 
 //Background Color
+
 body {
   //Gradient provided by @_ighosh at uigradients.com
   background: #ADA996;  /* fallback for old browsers */
@@ -43,6 +47,7 @@ body {
 
 
 //Nav Styles
+
 .navbar {
   background: #2d2a2a;
   border: none;
@@ -51,6 +56,17 @@ body {
 .navbar-brand{
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: rgb(217, 217, 217);
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid rgb(217, 217, 217);
+  &:hover, &:focus {
+    background-color: rgb(89, 89, 89)
+  }
 }
 
 .navbar-default .navbar-brand, 
