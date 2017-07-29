@@ -3,21 +3,24 @@
         <h1 class="text-center">Contact Us</h1>
         <br>
         <div class="col-md-2 col-md-offset-5">
-          <%= form_for "/contacts" do |f| %>
-            <div class ="form-group">
-                <%= f.text_field :name, class: 'form-control', placeholder: "Name" %>
+            <%= flash[:notice] %>
+            <div class="Well">
+                <%= form_for @contact do |f| %>
+                <div class ="form-group">
+                    <%= f.text_field :name, class: 'form-control', placeholder: "Name" %>
+                </div>
+                <br>
+                <div class ="form-group">
+                    <%= f.text_field :email, class: 'form-control', placeholder: "Email" %>
+                </div>
+                <br>
+                <div class ="form-group">
+                    <%= f.text_area :comments, class: 'form-control', placeholder: "Comment" %>
+                </div>
+                <br>
+                <%= f.submit 'Submit', class: 'btn-default' %>
+              <% end %>
             </div>
-            <br>
-            <div class ="form-group">
-                <%= f.text_field :email, class: 'form-control', placeholder: "Email" %>
-            </div>
-            <br>
-            <div class ="form-group">
-                <%= f.text_area :comments, class: 'form-control', placeholder: "Comment" %>
-            </div>
-            <br>
-            <%= f.submit 'Submit', class: 'btn-default' %>
-          <% end %>
         </div>
     </div>
 </div>
