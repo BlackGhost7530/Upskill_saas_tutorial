@@ -1,0 +1,6 @@
+Memberships
+
+- User schould see link for Basic plane on home page
+- User schould see link for Pro plane on home page
+- Basic plan link schould point to regular Devise sign up form
+- Pro plan link schould point to a custom sign up form
