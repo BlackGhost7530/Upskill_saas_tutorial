@@ -1,0 +1,30 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+    <h1 class="text-center">Basic Sign up</h1>
+    <br>
+    <h3 class="text-center">Sign up for free and get basic acccess to the community</h3>
+    <br>
+    <div class="field form-group">
+        <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: "Email" %>
+    </div>
+
+    <div class="field form-group">
+        <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %>
+        <br>
+        <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: "Password" %>
+    </div>
+    
+    <br>
+  
+    <div class="field form-group">
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: "password_confirmation" %>
+    </div>
+  
+    <br>
+  
+    <div class="actions form-group">
+        <%= f.submit "Sign up", class: 'btn btn_success' %>
+    </div>
+<% end %>
