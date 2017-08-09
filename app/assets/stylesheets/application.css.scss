@@ -77,6 +77,8 @@ body {
   }
 }
 
-.alert-notice {
-  display: none;
+.alert-notice, .alert-alert {
+    text-align: center;
+    font-size: 150%;
+    background-color: lightgrey;
 }
